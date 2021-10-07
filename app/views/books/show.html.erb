@@ -30,7 +30,9 @@
         </table>
         <table>
           <tr>
-          <%= render 'books/comment', book: @book,book_comment: @book_comment%>
+          <td class=<%= "book_comment_"+@book.id.to_s %>>
+          <%= render 'books/comment', book: @book, book_comment: @book_comment, newcomment: @newcomment %>
+          </td>  
           </tr>
         </table>
         </div>
